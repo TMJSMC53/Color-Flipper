@@ -1,0 +1,86 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Playfair Display", serif;
+  padding: 0;
+  margin: 0;
+}
+
+a,
+a:visited,
+a:active {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3 {
+  margin-top: 0;
+  line-height: 1.1;
+}
+
+.container {
+  margin: 100px auto;
+  max-width: 100%;
+  height: 100%;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.multicolortext {
+  font-size: 5rem;
+  background-image: linear-gradient(
+    to right,
+    #fec5bb,
+    #caffbf,
+    #9b2226,
+    #f28482
+  );
+
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  margin-bottom: 3rem;
+}
+
+h2 {
+  border: 3px solid #eee;
+  padding: 0.75em 1em;
+  border-radius: 28px;
+}
+
+.btn {
+  padding: 0.75em 1em;
+  margin-top: 2rem;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  color: red;
+
+  border-radius: 8px;
+}
+
+.btn--box {
+  border: 4px solid #eee;
+}
+
+.btn--box:hover {
+  border: 4px solid transparent;
+  border-image: linear-gradient(
+    to bottom right,
+    #b827fc 0%,
+    #2c90fc 25%,
+    #b8fd33 50%,
+    #fec837 75%,
+    #fd1892 100%
+  );
+  border-image-slice: 1;
+}
