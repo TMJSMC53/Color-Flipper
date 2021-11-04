@@ -37,14 +37,16 @@ const colors = [
 const colorDisplay = document.querySelector("#color-display");
 const btn = document.querySelector("#btn");
 
-btn.addEventListener("click", () => {
+const generatedRandNumber = () => {
+  return Math.floor(Math.random() * colors.length);
+};
+
+const displayChange = () => {
   const randomNum = generatedRandNumber();
 
   document.body.style.backgroundColor = colors[randomNum];
 
   colorDisplay.textContent = colors[randomNum];
-});
-
-const generatedRandNumber = () => {
-  return Math.floor(Math.random() * colors.length);
 };
+
+btn.addEventListener("click", displayChange);

@@ -40,10 +40,10 @@ h3 {
   font-size: 5rem;
   background-image: linear-gradient(
     to right,
-    #fec5bb,
-    #caffbf,
+    #003566,
+    #ffc300,
     #9b2226,
-    #f28482
+    #ffd60a
   );
 
   -webkit-background-clip: text;
@@ -70,6 +70,7 @@ h2 {
 
 .btn--box {
   border: 4px solid #eee;
+  transition: all 0.2s ease-in-out;
 }
 
 .btn--box:hover {
@@ -83,4 +84,5 @@ h2 {
     #fd1892 100%
   );
   border-image-slice: 1;
+  transform: scale(1.3);
 }
