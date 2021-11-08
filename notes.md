@@ -3,7 +3,7 @@
 3. And the name of the color will go where the word color is.
 4. Use arrays, Math.floor, Math.random. Iterate through an array to select a random color to appear on the screen when you click the button.
 
-- create an array with various colors
+- create an array with the various colors
 
 COOL FEATURES:
 
